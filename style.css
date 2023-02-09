@@ -1,13 +1,18 @@
 html {
-    background: linear-gradient(157deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(157deg, rgba(2,0,36,1) 0%, rgba(0,116,217,1) 50%, rgba(46,204,64,1) 100%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 div {
     display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
 }
 
-.navbar {
+div.navbar {
+    height: auto;
+    width: auto;
     position: sticky;
     background-color: #fff;
     margin: 1%;
@@ -21,31 +26,38 @@ div {
     box-shadow: 0 0 8px 7px #00000063, 0px 0px 0px 1px #2ecc40;   
 }
 
-.navbar1 {
+.navbar1:nth-of-type(1) {
     flex: auto;
-    width: 60px;
+    width: 30%;
     font-weight: 800;
     color: #0074d9;
 }
 
-.navbar1:hover {
+.navbar1:nth-of-type(1):hover {
     flex: auto;
-    width: 60px;
+    width: 30%;
     font-weight: 800;
     color: #2ecc40;
 }
 
-.navbar2 {
+.navbar1:nth-of-type(2) {
     flex-grow: 1;
-    padding: 0 30%;
+    height: auto;
+    width: 40%;
+}
+
+.navbar1:nth-of-type(3) {
+    margin: 0;
+    height: auto;
+    width: 30%;
 }
 
 .navbar3 {
-    justify-content: space-around;
+    justify-content: space-between;
     flex-grow: 4;
-    flex-direction: row;
     color: #0074d9;
     font-weight: bold;
+    position: static;
 }
 
 .navbar3onb:nth-of-type(1){
