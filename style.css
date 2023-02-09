@@ -1,46 +1,90 @@
 html {
-    background: rgb(2,0,36);
     background: linear-gradient(157deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div {
+    display: flex;
 }
 
 .navbar {
+    position: sticky;
     background-color: #fff;
     margin: 1%;
     border-radius: 5px;
     padding: 20px;
     display: flex;
+    flex-grow: 3;
     justify-content: space-between;
     justify-items: center;
     align-items: center;
+    box-shadow: 0 0 8px 7px #00000063, 0px 0px 0px 1px #2ecc40;   
 }
 
-.iniciales {
-    display: block;
-    margin: 0 70% 0 0;
+.navbar1 {
+    flex: auto;
+    width: 60px;
     font-weight: 800;
+    color: #0074d9;
 }
 
-.opcionesnb {
-    display: flex;
+.navbar1:hover {
+    flex: auto;
+    width: 60px;
+    font-weight: 800;
+    color: #2ecc40;
+}
+
+.navbar2 {
+    flex-grow: 1;
+    padding: 0 30%;
+}
+
+.navbar3 {
     justify-content: space-around;
     flex-grow: 4;
-    padding: 0 5px;
-}
-.opcionesnb:nth-of-type(1){
-    margin: 0;
-    }
-    
-.opcionesnb:nth-of-type(2) {
-    margin: 0;
+    flex-direction: row;
+    color: #0074d9;
+    font-weight: bold;
 }
 
+.navbar3onb:nth-of-type(1){
+    margin: 0 1%;
+    }
     
-.opcionesnb:nth-of-type(3){
-    margin: 0;
+.navbar3onb:nth-of-type(2) {
+    margin: 0 1%;
+}
+
+.navbar3onb:nth-of-type(3){
+    margin: 0 1%;
     }
 
-.opcionesnb:nth-of-type(4) {
-    display: flex;
-    justify-content: space-around;
-    flex-grow: 4;
+
+.navbar3onb:nth-of-type(4) {
+    margin: 0 1%;
+}
+
+/* Opciones del menú al pasar el cursos por ellos */
+
+.navbar3onb:nth-of-type(1):hover{
+    color: #2ecc40;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    }
+    
+.navbar3onb:nth-of-type(2):hover {
+        color: #2ecc40;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar3onb:nth-of-type(3):hover{
+        color: #2ecc40;
+    font-family: 'Courier New', Courier, monospace;
+    }
+
+
+.navbar3onb:nth-of-type(4):hover {
+        color: #2ecc40;
+    font-family: 'Courier New', Courier, monospace;
 }
