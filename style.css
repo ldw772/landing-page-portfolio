@@ -3,6 +3,18 @@ html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+p {
+    color: #fff;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.br {
+    display: block;
+    height: 20px;
+    padding: 2;
+  }
+
 div {
     display: flex;
     flex-direction: row;
@@ -23,7 +35,7 @@ div.navbar {
     justify-content: space-between;
     justify-items: center;
     align-items: center;
-    box-shadow: 0 0 8px 7px #00000063, 0px 0px 0px 1px #2ecc40;   
+    box-shadow: 0 3px 8px 5px rgba(0, 0, 0, 0.425), 0px 0px 0px 1px #2ecc40;   
    
 }
 
@@ -99,4 +111,51 @@ div.navbar {
 .navbar3onb:nth-of-type(4):hover {
         color: #2ecc40;
     font-family: 'Courier New', Courier, monospace;
+}
+
+/* Hero */
+
+.hero {
+    display: flex;
+    flex-grow: 2;
+    height: 80%;
+    width: auto;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.562);
+}
+
+
+/* Columna 1 */
+
+.hero1:nth-of-type(1) {
+    flex-grow: 1;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 5% 0% 10%;
+}
+
+.ttl {
+    font-weight: 900;
+    font-size: 30pt;
+    text-transform: uppercase;
+    line-height: 28pt;
+    color: #fff;
+    text-align: left;
+}
+
+/*Columna 2*/
+
+.hero1:nth-of-type(2) {
+    flex-grow: 1;
+    width: 50%;
+    height: 100%;
+    margin-left: 5%;
+    visibility: visible;
+    background-image: url('imagenes/Prtf.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
