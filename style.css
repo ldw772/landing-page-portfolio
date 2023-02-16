@@ -53,7 +53,7 @@ nav.navbar3{
 
 ul.menuprincipal {
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
     margin: 5px;
 }
 
@@ -76,6 +76,34 @@ li.menuprincipalonb {
     color: #2ecc40;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 900;
+}
+
+/* Media queries */
+
+.icon-navbar {
+    display: none!important;
+}
+
+@media (max-width: 760px) {
+
+    
+    ul.menuprincipal {
+        display: none;
+    }
+
+    .icon-navbar {
+        font-size: 18pt;
+        display: inline-block!important;
+        color: #0074d9;
+    }
+
+    .icon-navbar:active {
+        color: #2ecc40;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 900;
+    }
+
+
 }
 
 
