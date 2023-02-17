@@ -243,6 +243,71 @@ li.menuprincipalonb {
     box-shadow: 0 2px 5px 5px rgba(255, 255, 255, 0.603);
 }
 
+
+/* - Media querys Hero - */
+
+@media (max-width: 760px) {
+
+    p {
+        color: #fff;
+        text-align: justify;
+        line-height: 14px;
+        font-size: 10pt;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        width: auto;
+        margin: 3%;
+        padding: auto !important;
+    }
+
+    .hero1 {
+        height: 100%;
+        padding: 10%;
+    }
+
+    .hero1:nth-of-type(1) {
+        flex-grow: 1;
+        height: 40%;
+        width: auto;
+        margin: auto;
+        padding: 50px;
+    }
+    
+    .ttl {
+        font-weight: 900;
+        font-size: 16pt;
+        text-transform: uppercase;
+        line-height: 24pt;
+        color: #fff;
+        text-align: left;
+    }
+    
+    /*Columna 2*/
+    
+    .hero1:nth-of-type(2) {
+        flex-grow: 1;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        visibility: visible;
+        background-image: url('imagenes/Prtf.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+}
+
+
+
+
 .parteuno {
     display: flex;
     flex-direction: column;
