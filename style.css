@@ -84,8 +84,17 @@ li.menuprincipalonb {
     display: none!important;
 }
 
+.change {
+    display: none;
+}
+
 @media (max-width: 760px) {
 
+    .navbar3 {
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+    }
     
     ul.menuprincipal {
         display: none;
@@ -102,6 +111,11 @@ li.menuprincipalonb {
         font-family: 'Courier New', Courier, monospace;
         font-weight: 900;
     }
+
+    .change:checked ~ ul.menuprincipal {
+        display: inline-block;
+    }
+
 
 
 }
