@@ -1,6 +1,7 @@
 html {
     background: linear-gradient(157deg, rgba(2,0,36,1) 0%, rgba(0,116,217,1) 50%, rgba(46,204,64,1) 100%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(2,0,36,1);
 }
 
 body {
@@ -323,9 +324,6 @@ li.menuprincipalonb {
 
 }
 
-
-
-
 .parteuno {
     display: flex;
     flex-direction: column;
@@ -339,7 +337,6 @@ li.menuprincipalonb {
 
 }
 
-
 .ptc {
     width: auto;
     height: auto;
@@ -349,10 +346,7 @@ li.menuprincipalonb {
     background-color: #000;
     vertical-align: baseline;
     text-align: center;
-    
-
-}
-
+    }
 
 /* Tarjetas */
 
@@ -443,6 +437,7 @@ li.menuprincipalonb {
   }
   
   .cara {
+    padding: 4% 4%;
     position: absolute;
     backface-visibility: hidden;
     text-align: center;
@@ -474,6 +469,139 @@ li.menuprincipalonb {
         align-items: center;
     }
 
+    h2 {
+        font-size: 14pt;
+    }
 
+    h3 {
+        font-size: 10pt;
+    }
 
+}
+
+/*  Tarjetas 2  */
+
+.tarjetas2 {
+    display: flex;
+    flex-direction: row;
+    margin: 1% 5%;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
   }
+  
+  :root {
+    --servicios-height: 65vh;
+    --servicios-width: calc(var(--card-height) / 1.5);
+  }
+
+.servicios {
+    background: rgba(2,0,36,1);
+    width: var(--servicios-width);
+    height: var(--servicios-height);
+    padding: 3% 1%;
+    margin: 2%;
+    width: 100%;
+    height: 100;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    color: #fff;
+  }
+  
+  .servicios:hover {
+    color: #2ecc40;
+    transition: color 0.5s;
+    background-color: #fff;
+    box-shadow: 0 3px 8px 5px rgba(0, 0, 0, 0.425), 0px 0px 0px 1px #2ecc40;
+    font-size: 14pt;
+}
+
+  .servicios:hover:before, .servicios:hover:after {
+    animation: none;
+    opacity: 0;
+  }
+  
+  
+  .servicios::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #2ecc40 43%, #0074d9 );
+      position: absolute;
+      z-index: -1;
+      top: -1%;
+      left: -2%;
+      animation: spin 8.5s linear infinite;
+      box-shadow: 0 3px 8px 5px rgba(0, 0, 0, 0.425);
+  }
+  
+  .servicios::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--servicios-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--servicios-height) / 6));
+    background-image: linear-gradient(
+      var(--rotate)
+      , #2ecc40 43%, #0074d9 );
+      opacity: 1;
+    transition: opacity .5s;
+    animation: spin 8.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+
+
+  /* Media Queries - tarjetas 2 */
+
+  @media (max-width: 768px) {
+
+    .tarjetas2 {
+        display: flex;
+        flex-direction: column;
+        margin: 1% 5%;
+        width: auto;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .servicios {
+        background: rgba(2,0,36,1);
+        width: var(--servicios-width);
+        height: var(--servicios-height);
+        padding: 3% 1%;
+        margin: 2%;
+        width: 70%;
+        height: 100;
+    }
+
+
+}
