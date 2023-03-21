@@ -1,4 +1,5 @@
 html {
+    display: f;
     background: linear-gradient(157deg, rgba(2,0,36,1) 0%, rgba(0,116,217,1) 50%, rgba(46,204,64,1) 100%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgba(2,0,36,1);
@@ -146,24 +147,27 @@ li.menuprincipalonb {
 
 /* Hero */
 
-.hero {
+div.hero {
     display: flex;
-    flex-grow: 2;
-    height: 80%;
-    width: auto;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 50px;
-    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.562);
+}
+
+.hero {
+  height: 35em;
+  width: auto;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.562);
 }
 
 
 /* Columna 1 */
 
-.hero1:nth-of-type(1) {
+div.hero1 {
     flex-grow: 1;
-    width: 50%;
+    height: auto;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     padding: 5% 5% 0% 10%;
@@ -180,13 +184,13 @@ li.menuprincipalonb {
 
 /*Columna 2*/
 
-.hero1:nth-of-type(2) {
+div.hero2 {
     flex-grow: 1;
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: auto;
     margin-left: 5%;
     visibility: visible;
-    background-image: url('imagenes/Prtf.png');
+    background-image: url('/imagenes/Prtf.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -272,35 +276,33 @@ li.menuprincipalonb {
 
 @media (max-width: 760px) {
 
-    p {
-        color: #fff;
-        text-align: justify;
-        line-height: 16px;
-        font-size: 10pt;
+    div.hero {
+      display: flex !important;
+      align-items: center;
     }
 
+
     .hero {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 90%;
-        width: auto;
-        margin: 3%;
-        padding: auto !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        height: 40em;
+        width: 80%;
+        margin: 8%;
+        padding-top: 2% !important;
+        padding-right: 2% !important;
+        padding-left: 2% !important;
+        padding-bottom: 0% !important;
     }
 
     .hero1 {
-        height: 100%;
-        padding: 10%;
-    }
-
-    .hero1:nth-of-type(1) {
-        flex-grow: 1;
-        height: 40%;
-        width: auto;
-        margin: auto;
-        padding: 50px;
+        height: 50% !important;
+        width: 80% !important;
+        margin-bottom: 0% !important;
+        padding-top: 2% !important;
+        padding-right: 5% !important;
+        padding-left: 5% !important;
+        padding-bottom: 20px !important;
     }
     
     .ttl {
@@ -309,22 +311,44 @@ li.menuprincipalonb {
         text-transform: uppercase;
         line-height: 24pt;
         color: #fff;
-        text-align: left;
+        text-align: center;
     }
+
+    .botones1 {
+      font-size: 0.6em;
+    }
+    .botones1:nth-of-type(1):hover {
+      font-size: 0.7em;
+    }
+
+    .botones1:nth-of-type(2):hover {
+      font-size: 0.7em;
+      line-height: 0.8em;
+    }
+    
+    p {
+      color: #fff;
+      text-align: justify;
+      line-height: 16px;
+      font-size: 10pt;
+  }
     
     /*Columna 2*/
     
-    .hero1:nth-of-type(2) {
-        flex-grow: 1;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
+    .hero2 {
+        width: 100% !important;
+        height: 50% !important;
+        margin-top: 20px !important;
+        margin-bottom: 0px !important;
+        padding-top: 10em !important;
+        padding-right: 0% !important;
+        padding-left: 0% !important;
+        padding-bottom: 0% !important;
         visibility: visible;
         background-image: url('imagenes/Prtf.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: top !important;
     }
 
 }
@@ -355,18 +379,26 @@ li.menuprincipalonb {
 
 /* Tarjetas */
 
+div.sbrmi {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: auto;
+}
+
 .trj {
     margin: 3%;
     display: flex;
     flex-direction: row;
+    padding-bottom: 5%;
 }
 
 .tarjeta1 {
     position: relative;
     margin: 1%;
-    width: 300px;
-    height: 200px;
-    padding:  7% 8% 7% 8%;
+    width: 20em;
+    height: 20em;
+    padding:  2% 3%;
     transform-style: preserve-3d;
     transition: transform 0.5s;
     background-color: #fff;
@@ -379,14 +411,15 @@ li.menuprincipalonb {
   .tarjeta1:hover {
     transform: rotateY(180deg);
     background-color: #0074d9;
+    height: 20em;
   }
 
   .tarjeta2 {
     position: relative;
     margin: 1%;
-    width: 300px;
-    height: 200px;
-    padding:  7% 8% 7% 8%;
+    width: 20em;
+    height: 20em;
+    padding:  2% 3%;
     transform-style: preserve-3d;
     transition: transform 0.5s;
     background-color: #fff;
@@ -399,14 +432,15 @@ li.menuprincipalonb {
   .tarjeta2:hover {
     transform: rotateY(180deg);
     background-color: #0074d9;
+    height: 20em;
   }
 
   .tarjeta3 {
     position: relative;
     margin: 1%;
-    width: 300px;
-    height: 200px;
-    padding:  7% 8% 7% 8%;
+    width: 20em;
+    height: 20em;
+    padding:  2% 3%;
     transform-style: preserve-3d;
     transition: transform 0.5s;
     background-color: #fff;
@@ -419,14 +453,15 @@ li.menuprincipalonb {
   .tarjeta3:hover {
     transform: rotateY(180deg);
     background-color: #0074d9;
+    height: 20em;
   }
 
   .tarjeta4 {
     position: relative;
     margin: 1%;
-    width: 300px;
-    height: 200px;
-    padding:  7% 8% 7% 8%;
+    width: 20em;
+    height: 20em;
+    padding:  2% 3%;
     transform-style: preserve-3d;
     transition: transform 0.5s;
     background-color: #fff;
@@ -439,6 +474,7 @@ li.menuprincipalonb {
   .tarjeta4:hover {
     transform: rotateY(180deg);
     background-color: #0074d9;
+    height: 20em;
   }
   
   .cara {
@@ -451,10 +487,14 @@ li.menuprincipalonb {
   .cara.detras {
     transform: rotateY(180deg);
     height: auto;
+    width: auto;
+    padding: auto;
+    /*
     padding-top: 5%;
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 5%;
+    */
   }
   
   .cara.detras p {
@@ -483,14 +523,22 @@ li.menuprincipalonb {
 
 }
 
-/*  Tarjetas 2  */
+/*  --- Tarjetas 2: Servicios ---  */
+
+div.dservicios {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: auto;
+}
 
 .tarjetas2 {
     display: flex;
     flex-direction: row;
+    flex: auto;
     margin: 1% 5%;
     width: auto;
-    height: auto;
+    height: 100%;
     align-items: center;
     justify-content: center;
 }
@@ -506,21 +554,24 @@ li.menuprincipalonb {
     --servicios-width: calc(var(--card-height) / 1.5);
   }
 
+  .tarjetas2 > * { flex: 1 4 20px; /* ancho y alto fijos */ }
+
 .servicios {
     background: rgba(2,0,36,1);
+    display: flex;
     width: var(--servicios-width);
     height: var(--servicios-height);
     padding: 3% 1%;
     margin: 2%;
     width: 100%;
-    height: 100;
+    height: 5em;
     position: relative;
     border-radius: 6px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    display: flex;
     color: #fff;
+    align-content: stretch;
   }
   
   .servicios:hover {
@@ -528,7 +579,6 @@ li.menuprincipalonb {
     transition: color 0.5s;
     background-color: #fff;
     box-shadow: 0 3px 8px 5px rgba(0, 0, 0, 0.425), 0px 0px 0px 1px #2ecc40;
-    font-size: 14pt;
 }
 
   .servicios:hover:before, .servicios:hover:after {
@@ -568,7 +618,7 @@ li.menuprincipalonb {
     background-image: linear-gradient(
       var(--rotate)
       , #2ecc40 43%, #0074d9 );
-      opacity: 1;
+    opacity: 1;
     transition: opacity .5s;
     animation: spin 8.5s linear infinite;
   }
@@ -587,12 +637,16 @@ li.menuprincipalonb {
 
   @media (max-width: 768px) {
 
+    .dservicios {
+      margin: 5% 0%;
+    }
+
     .tarjetas2 {
         display: flex;
         flex-direction: column;
-        margin: 1% 5%;
+        margin: 0 10% 0 15%;
         width: auto;
-        height: auto;
+        height: 30em;
         align-items: center;
         justify-content: center;
     }
@@ -607,6 +661,19 @@ li.menuprincipalonb {
         height: 100;
     }
 
+    .prtfolio {
+      margin: 5% 0%;
+    }
+
+}
+
+/* --- Portfolio --- */
+
+div.prtfolio {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: auto;
 }
 
 .tarjetaemp1 {
@@ -616,7 +683,7 @@ li.menuprincipalonb {
     padding: 3% 1%;
     margin: 2%;
     width: 100%;
-    height: 100;
+    height: 5em;
     position: relative;
     border-radius: 6px;
     justify-content: center;
@@ -675,4 +742,5 @@ li.menuprincipalonb {
   .tarjetaemp1:hover {
     transform: rotateY(180deg);
     background-color: #ffffff;
+    cursor: pointer;
   }

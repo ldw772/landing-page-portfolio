@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,58 +14,59 @@
 
 <body>
 <!-- Navbar y menú -->
-    <header>
-        <div class="navbar">
-            <div class="navbar1">Ludwing Requena</div>
-            <div class="navbar2"></div>
-            <nav class="navbar3">
-                <label for="change">
-                    <i class="fa-solid fa-bars icon-navbar"></i>
-                </label>
-                <input type="checkbox" class="change" name="change" id="change">
-                <ul class="menuprincipal">
-                    <li class="menuprincipalonb"><a href="index.html">Inicio</a></li>
-                    <li class="menuprincipalonb"><a href="sobre-mi.html">Sobre mi</a></li>
-                    <li class="menuprincipalonb"><a href="servicios.html">Servicios</a></li>
-                    <li class="menuprincipalonb"><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            
+<header>
+    <div class="navbar">
+        <div class="navbar1">Ludwing Requena</div>
+        <div class="navbar2"></div>
+        <nav class="navbar3">
+            <label for="change">
+                <i class="fa-solid fa-bars icon-navbar"></i>
+            </label>
+            <input type="checkbox" class="change" name="change" id="change">
+            <ul class="menuprincipal">
+                <li class="menuprincipalonb"><a href="index.html">Inicio</a></li>
+                <li class="menuprincipalonb"><a href="#sobremi">Sobre mi</a></li>
+                <li class="menuprincipalonb"><a href="#servicios">Servicios</a></li>
+                <li class="menuprincipalonb"><a href="#portfolio">Portfolio</a></li>
+                <li class="menuprincipalonb"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        
 
-        </div>
-    </header>
+    </div>
+</header>
  
 <!-- Hero -->
 
-    <div class="hero">
-        <section class="hero1">
-            <section class="ttl">Estrategia y creatividad en línea</section>
-            <section>
-                <p>Soy un profesional creativo con habilidades en social media, creación de contenido, redacción publicitaria y desarrollo web. Diseño y construyo sitios web personalizados en WordPress, mientras creo contenido atractivo y convincente que conecta con la audiencia.</p>
-                <section class="botones">
-                    <button class="botones1">Contactar</button>
-                    <button class="botones1">Más información</button>
-                </section>
+<div class="hero">
+    <div class="hero1">
+        <section class="ttl">Estrategia y creatividad en línea</section>
+        <section>
+            <p>Soy un profesional creativo con habilidades en social media, creación de contenido, redacción publicitaria y desarrollo web. Diseño y construyo sitios web personalizados en WordPress, mientras creo contenido atractivo y convincente que conecta con la audiencia.</p>
+            <section class="botones">
+                <button class="botones1">Contactar</button>
+                <button class="botones1">Más información</button>
             </section>
         </section>
-        <section class="hero1">
-        </section>
     </div>
+    <div class="hero2">
+    </div>
+</div>
 
 <!-- Breve texto luego del hero -->
 
-    <div>
-        <section class="parteuno">
-            <p>Mucho gusto, mi nombre es Ludwing Requena.</p>
-            <p>Además de ser escritor y creador de contenido en general (textos, imágenes, videos, locuciones, canciones) también estoy en proceso de formación para ser un desarrollador web full stack.</p>
-            <p>Ya hablé un poco de mi para que me puedas conocer, en esta página podrás ver algunos servicios digitales con los que puedo ayudarte a digitalizar tu negocio o darlo a conocer en internet... porque quien no está en internet, llegará el momento en el que será como si no existiese.</p>
-     </section>
-    </div>
+<div>
+    <section class="parteuno">
+        <p>Mucho gusto, mi nombre es Ludwing Requena.</p>
+        <p>Además de ser escritor y creador de contenido en general (textos, imágenes, videos, locuciones, canciones) también estoy en proceso de formación para ser un desarrollador web full stack.</p>
+        <p>Ya hablé un poco de mi para que me puedas conocer, en esta página podrás ver algunos servicios digitales con los que puedo ayudarte a digitalizar tu negocio o darlo a conocer en internet... porque quien no está en internet, llegará el momento en el que será como si no existiese.</p>
+    </section>
+</div>
 
-<!-- Tarjetas 1 -->
+<!-- Tarjetas 1: Sobre mi -->
 
-    <div>
-        <h2 class="ptc">¿Por qué trabajar conmigo?</h2>
+    <div class="sbrmi">
+        <h2 class="ptc" id="sobremi">¿Por qué trabajar conmigo?</h2>
         <div class="trj">
             <div class="tarjeta1">
                 <div class="cara">
@@ -102,10 +104,10 @@
         </div>          
     </div>
 
-<!-- Tarjetas 2 -->
+<!-- Tarjetas 2: Servicios -->
 
-<div>
-    <h2 class="ptc">Actividades en las que podré ayudarte</h2>
+<div class="dservicios">
+    <h2 class="ptc" id="servicios">Actividades en las que podré ayudarte</h2>
     <div class="tarjetas2">
         <div class="servicios">
             <div>
@@ -153,17 +155,19 @@
     </div>          
 </div>
 
-<!-- Tarjetas 3 -->
+<!-- Tarjetas 3: Portfolio -->
 
-<div>
-    <h2 class="ptc">Conoce algunas de las empresas con las que he podido trabajar</h2>
+<div class="prtfolio">
+    <h2 class="ptc" id="portfolio">Conoce algunas de las empresas con las que he podido trabajar</h2>
     <div class="tarjetas2">
         <div class="tarjetaemp1">
             <div class="cara">
                 <h3>Grúas Bolívar</h3>
             </div>
             <div class="cara detras">
-                <img src="/imagenes/clientes/logo.png" style="width:  8em;" alt="Grúas Bólivar">
+                <a href="https://lfrequenafigueredo.com/portafolio/">
+                    <img src="/imagenes/clientes/logo.png" style="width:  8em;" alt="Grúas Bólivar">
+                </a>
             </div>
         </div>
         <div class="tarjetaemp1">
@@ -171,7 +175,9 @@
                 <h3>Guauland</h3>
             </div>
             <div class="cara detras">
-                <img src="/imagenes/clientes/Guauland-Logo-I.png" style="width:  8em;" alt="Guauland">
+                <a href="https://lfrequenafigueredo.com/portafolio/">
+                    <img src="/imagenes/clientes/Guauland-Logo-I.png" style="width:  8em;" alt="Guauland">
+                </a>
             </div>
         </div>
         <div class="tarjetaemp1">
@@ -179,7 +185,9 @@
                 <h3>GAMT</h3>
             </div>
             <div class="cara detras">
-                <img src="/imagenes/clientes/gamt-peru.png" style="width:  8em;" alt="GAMT">
+                <a href="https://lfrequenafigueredo.com/portafolio/">
+                    <img src="/imagenes/clientes/gamt-peru.png" style="width:  8em;" alt="GAMT">
+                </a>
             </div>
         </div>
     </div>
@@ -190,7 +198,9 @@
                 <h3>La Marquería Miraflores</h3>
             </div>
             <div class="cara detras">
-                <img src="/imagenes/clientes/LA MARQUERÍA LOGO.png" style="width:  8em;" alt="La Marquería Miraflores">
+                <a href="https://lfrequenafigueredo.com/portafolio/">
+                    <img src="/imagenes/clientes/LA MARQUERÍA LOGO.png" style="width:  8em;" alt="La Marquería Miraflores">
+                </a>
             </div>
         </div>
         <div class="tarjetaemp1">
@@ -198,7 +208,9 @@
                 <h3>Limi</h3>
             </div>
             <div class="cara detras">
-                <img src="/imagenes/clientes/limi-importaciones.png" style="width: 8em;" alt="Limi">
+                <a href="https://lfrequenafigueredo.com/portafolio/">
+                    <img src="/imagenes/clientes/limi-importaciones.png" style="width: 8em;" alt="Limi">
+                </a>
             </div>
         </div>
         <div class="tarjetaemp1">
@@ -206,7 +218,9 @@
                 <h3>DH Servi & Decor</h3>
             </div>
             <div class="cara detras">
-                <img src="/imagenes/clientes/d-a-h-servi-decor.png" style="width: 8em;" alt="D & H Servi & Decor">
+                <a href="https://lfrequenafigueredo.com/portafolio/">
+                    <img src="/imagenes/clientes/d-a-h-servi-decor.png" style="width: 8em;" alt="D & H Servi & Decor">
+                </a>
             </div>
         </div>
     </div>          
