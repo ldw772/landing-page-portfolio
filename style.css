@@ -744,3 +744,50 @@ div.prtfolio {
     background-color: #ffffff;
     cursor: pointer;
   }
+
+  /* --- Contacto --- */
+
+  div.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: auto;
+    background-color: #000;
+  }
+
+  .ctt {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 80%;
+  }
+   .trjcontacto {
+    height: 50%;
+    width: 50%;
+    padding: 5%;
+   }
+   
+   .trjcontacto.dtcontacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   }
+
+   .dtcontacto {
+    list-style: none;
+    color: #fff;
+   }
+
+   .cttimg {
+    filter: invert(100%) sepia(0%) saturate(7424%) hue-rotate(341deg) brightness(97%) contrast(117%);
+    width: 10%;
+    height: 10%;
+  }
+
+  .dtcontacto > li {
+    padding: 5%;
+  }
