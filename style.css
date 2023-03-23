@@ -41,15 +41,26 @@ button:hover {
 
 /*  Header  */
 
+header.myheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 30px 0;
+}
+
 div.navbar {
+  position: fixed;
+  z-index: 2;
     height: auto;
+    width: 90%;
     display: flex;
     justify-content: center;
     justify-content: space-between;
     justify-items: center;
     align-items: center;
     flex-direction: row;
-    margin: 1%;
+    margin: 3% 2% 0 2%;
     background-color: #fff;
     border-radius: 5px;
     padding: 20px;
@@ -57,6 +68,7 @@ div.navbar {
 }
 
 div.navbar1{
+  height: 100%;
     font-weight: 800;
     color: #0074d9;
 }
@@ -66,10 +78,12 @@ div.navbar1:hover {
 }
 
 div.navbar2{
+  height: 100%;
     width: 30%;
 }
 
 nav.navbar3{
+  height: 100%;
     width: 40%;
 }
 
@@ -102,7 +116,8 @@ li.menuprincipalonb {
     font-weight: 900;
 }
 
-/* Media queries */
+/* Media queries 760px */
+
 
 .icon-navbar {
     display: none!important;
@@ -113,6 +128,31 @@ li.menuprincipalonb {
 }
 
 @media (max-width: 760px) {
+
+  header.myheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 10px 30px 10px;
+  }
+
+  div.navbar {
+    position: fixed;
+    z-index: 2;
+      height: auto;
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      justify-content: space-between;
+      justify-items: center;
+      align-items: center;
+      flex-direction: row;
+      margin: 7% 2% 0 2%;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+  }
 
     .navbar3 {
         display: flex;
@@ -136,10 +176,10 @@ li.menuprincipalonb {
         font-weight: 900;
     }
 
+
     .change:checked ~ ul.menuprincipal {
         display: inline-block;
     }
-
 
 
 }
@@ -149,6 +189,7 @@ li.menuprincipalonb {
 
 div.hero {
     display: flex;
+    margin-top: 6%;
 }
 
 .hero {
@@ -279,6 +320,7 @@ div.hero2 {
     div.hero {
       display: flex !important;
       align-items: center;
+      margin-top: 18%;
     }
 
 
@@ -754,7 +796,9 @@ div.prtfolio {
     justify-content: center;
     height: 100%;
     width: auto;
+    padding: 5%;
     background-color: #000;
+
   }
 
   .ctt {
@@ -769,16 +813,19 @@ div.prtfolio {
     padding: 5%;
    }
    
-   .trjcontacto.dtcontacto {
+ .dtcontacto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 5%;
    }
 
-   .dtcontacto {
+   .dtcontacto a {
+    color: #fff;
     list-style: none;
+    text-decoration: none;
     color: #fff;
    }
 
