@@ -67,13 +67,16 @@ div.navbar {
     box-shadow: 0 3px 8px 5px rgba(0, 0, 0, 0.425), 0px 0px 0px 1px #2ecc40;
 }
 
-div.navbar1{
+div.navbar1 a:-webkit-any-link {
   height: 100%;
+  text-decoration: none;
     font-weight: 800;
     color: #0074d9;
+
+    
 }
 
-div.navbar1:hover {
+div.navbar1:hover a:-webkit-any-link {
     color: #2ecc40;
 }
 
@@ -813,28 +816,87 @@ div.prtfolio {
     padding: 5%;
    }
    
- .dtcontacto {
+   .dtcontacto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 5%;
-   }
+    margin: 0;
+    padding: 0;
+  }
 
-   .dtcontacto a {
-    color: #fff;
+.dtcontacto1 {
+  padding: 5%;
+}
+
+.dtcontacto2 {
+  padding: 5%;
+}
+
+   .dtcontacto1 a:-webkit-any-link {
     list-style: none;
     text-decoration: none;
     color: #fff;
+    padding: 5%;
+   }
+
+   .dtcontacto2 a:-webkit-any-link {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    padding: 5%;
    }
 
    .cttimg {
     filter: invert(100%) sepia(0%) saturate(7424%) hue-rotate(341deg) brightness(97%) contrast(117%);
-    width: 10%;
-    height: 10%;
+    width: 15%;
+    height: 15%;
   }
 
-  .dtcontacto > li {
+  .cttimg:hover {
+    filter: invert(71%) sepia(11%) saturate(3067%) hue-rotate(74deg) brightness(90%) contrast(91%);
+  }
+
+  .dtcontacto1 a:-webkit-any-link > li {
     padding: 5%;
   }
+
+  .dtcontacto2 a:-webkit-any-link > li {
+    padding: 5%;
+  }
+
+.dtcontacto1:hover a:-webkit-any-link {
+    color: #2ecc40;
+}
+
+.dtcontacto2:hover a:-webkit-any-link {
+  color: #2ecc40;
+}
+
+/* - Media querys Contacto - */
+
+@media (max-width: 760px) {
+
+  .ctt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: auto;
+  }
+
+  .trjcontacto {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* Footer */
+
+.cfooter {
+  text-align: center;
+  padding: 0.5% 5% 0.5% 2%;
+  cursor: none;
+}
