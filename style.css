@@ -260,11 +260,10 @@ div.hero2 {
     justify-content: center;
     margin: 10px;
     height: 40px;
-    width: 40%;
+    width: 43%;
     border: none;
     border-radius: 8px;
     background-color: #2ecc40;
-    padding: 2%;
     box-shadow: 0 2px 4px 3px rgba(0, 0, 0, 0.425);
     text-decoration: none;
   }
@@ -275,11 +274,10 @@ div.hero2 {
     justify-content: center;
     margin: 10px;
     height: 40px;
-    width: 40%;
+    width: 43%;
     border: none;
     border-radius: 8px;
     background-color: #fff;
-    padding: 2%;
     box-shadow: 0 2px 4px 3px rgba(0, 0, 0, 0.425);   
     text-decoration: none;
   }
@@ -301,7 +299,6 @@ div.hero2 {
   border: none;
   border-radius: 8px;
   background-color: #ffffff00;
-  padding: 1%;
   text-transform: uppercase;
   font-weight: 600;
   font-style: none;
@@ -315,7 +312,6 @@ div.hero2 {
   border: none;
   border-radius: 8px;
   background-color: #ffffff00;
-  padding: 1%;
   text-transform: uppercase;
   font-weight: 600;
   font-style: none;
@@ -335,12 +331,11 @@ div.hero2 {
 
 .botones1:hover {
     margin: 10px;
-    height: 50px;
-    width: 40%;
+    height: 45px;
+    width: 43%;
     border: none;
     border-radius: 8px;
     background-color: #0074d9;
-    padding: 1%;
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 5px 5px rgba(255, 255, 255, 0.425);
@@ -357,11 +352,10 @@ div.hero2 {
 .botones2:hover {
     margin: 10px;
     height: 45px;
-    width: 40%;
+    width: 43%;
     border: none;
     border-radius: 8px;
     background-color: #0074d9;
-    padding: 1%;
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 5px 5px rgba(255, 255, 255, 0.425);
