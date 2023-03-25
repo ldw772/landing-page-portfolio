@@ -248,7 +248,16 @@ div.hero2 {
 
 }
 
-.botones1:nth-of-type(1) {
+/* .botones1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.botones1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 10px;
     height: 40px;
     width: 40%;
@@ -256,13 +265,14 @@ div.hero2 {
     border-radius: 8px;
     background-color: #2ecc40;
     padding: 2%;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #fff;
     box-shadow: 0 2px 4px 3px rgba(0, 0, 0, 0.425);
-}
+    text-decoration: none;
+  }
 
-.botones1:nth-of-type(2) {
+.botones2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 10px;
     height: 40px;
     width: 40%;
@@ -270,15 +280,60 @@ div.hero2 {
     border-radius: 8px;
     background-color: #fff;
     padding: 2%;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #0074d9;
     box-shadow: 0 2px 4px 3px rgba(0, 0, 0, 0.425);   
+    text-decoration: none;
+  }
+
+/* .boton {
+    margin: 10px;
+    height: auto;
+    width: auto;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff00;
+    padding: 1%;
+  } */
+
+
+ .boton1 {
+  height: auto;
+  width: auto;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff00;
+  padding: 1%;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+.boton2 {
+  height: auto;
+  width: auto;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff00;
+  padding: 1%;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-style: none;
+  color: #0074d9;
 }
 
 /* Cursor sobre los botones*/
 
-.botones1:nth-of-type(1):hover {
+
+/* button.boton:hover {
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+  font-size: 14pt;
+  color: #fff;
+} */
+
+.botones1:hover {
     margin: 10px;
     height: 50px;
     width: 40%;
@@ -286,17 +341,20 @@ div.hero2 {
     border-radius: 8px;
     background-color: #0074d9;
     padding: 1%;
-    text-transform: uppercase;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 900;
-    font-size: 14pt;
-    color: #fff;
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 5px 5px rgba(255, 255, 255, 0.425);
 }
 
-.botones1:nth-of-type(2):hover {
+.botones1:hover .boton1 {
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+  font-size: 12pt;
+  line-height: 12px;
+}
+
+.botones2:hover {
     margin: 10px;
     height: 45px;
     width: 40%;
@@ -304,15 +362,18 @@ div.hero2 {
     border-radius: 8px;
     background-color: #0074d9;
     padding: 1%;
-    text-transform: uppercase;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 900;
-    font-size: 14pt;
-    line-height: 14pt;
-    color: #fff;
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 5px 5px rgba(255, 255, 255, 0.425);
+}
+
+.botones2:hover .boton2 {
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+  font-size: 12pt;
+  line-height: 12px;
+  color: #fff;
 }
 
 
